@@ -1,0 +1,9 @@
+{
+  "name": "com.newbie79.host_switcher",
+  "description": "Host Switcher native helper for hosts file editing",
+  "path": "__RUN_HOST_BAT_PATH__",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://__EXTENSION_ID__/"
+  ]
+}

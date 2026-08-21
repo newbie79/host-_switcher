@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>Host Switcher</title>
+<style>
+  body {
+    width: 300px;
+    max-height: 480px;
+    overflow-y: auto;
+    font-family: -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+    padding: 12px 14px;
+    margin: 0;
+    color: #1a1a1a;
+  }
+  h1 {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  .domain-block {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 8px 10px 10px 10px;
+    margin-bottom: 10px;
+  }
+  .domain-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+    word-break: break-all;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    padding: 6px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .option:hover { background: #f2f2f2; }
+  .option input { margin-right: 8px; }
+  .option .name { font-weight: 500; font-size: 12.5px; }
+  .option .ip { margin-left: auto; font-size: 11px; color: #888; }
+  .status {
+    font-size: 10.5px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-top: 4px;
+  }
+  .status.on { background: #e6f7ec; color: #1a7f3c; }
+  .status.off { background: #f2f2f2; color: #888; }
+  #empty {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    padding: 16px 4px;
+  }
+  #optionsLink {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <h1>Host Switcher</h1>
+  <div id="list"></div>
+  <div id="empty" style="display:none">등록된 도메인이 없습니다.<br />아래 "도메인/서버 관리"에서 추가하세요.</div>
+  <div id="optionsLink">도메인 / 서버 관리</div>
+
+  <script src="common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+13:35:10 pid=51988 main: process started
+13:35:10 pid=51988 read_message: start, waiting for 4-byte length prefix
+13:35:10 pid=51988 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:35:10 pid=51988 read_message: msg_len=31, reading body
+13:35:10 pid=51988 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:35:10 pid=51988 main: message={'action': 'apply', 'entries': []}
+13:35:10 pid=51988 apply_entries: start, entries=[]
+13:35:10 pid=51988 apply_entries: opening hosts file for read
+13:35:10 pid=51988 apply_entries: read 1368 chars
+13:35:10 pid=51988 apply_entries: computed updated content, creating temp file
+13:35:15 pid=66408 main: process started
+13:35:15 pid=66408 read_message: start, waiting for 4-byte length prefix
+13:35:15 pid=66408 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+13:35:15 pid=66408 read_message: msg_len=81, reading body
+13:35:15 pid=66408 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+13:35:15 pid=66408 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+13:35:15 pid=66408 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+13:35:15 pid=66408 apply_entries: opening hosts file for read
+13:35:15 pid=66408 apply_entries: read 1368 chars
+13:35:15 pid=66408 apply_entries: computed updated content, creating temp file
+13:48:52 pid=45012 main: process started
+13:48:52 pid=45012 read_message: start, waiting for 4-byte length prefix
+13:48:52 pid=45012 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:48:52 pid=45012 read_message: msg_len=31, reading body
+13:48:52 pid=45012 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:48:52 pid=45012 main: message={'action': 'apply', 'entries': []}
+13:48:52 pid=45012 apply_entries: start, entries=[]
+13:48:52 pid=45012 apply_entries: opening hosts file for read
+13:48:52 pid=45012 apply_entries: read 1368 chars
+13:48:52 pid=45012 apply_entries: computed updated content, creating temp file
+13:49:04 pid=68404 main: process started
+13:49:04 pid=68404 read_message: start, waiting for 4-byte length prefix
+13:49:04 pid=68404 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+13:49:04 pid=68404 read_message: msg_len=81, reading body
+13:49:04 pid=68404 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+13:49:04 pid=68404 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+13:49:04 pid=68404 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+13:49:04 pid=68404 apply_entries: opening hosts file for read
+13:49:04 pid=68404 apply_entries: read 1368 chars
+13:49:04 pid=68404 apply_entries: computed updated content, creating temp file
+13:51:44 pid=39536 main: process started
+13:51:44 pid=39536 read_message: start, waiting for 4-byte length prefix
+13:51:44 pid=39536 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:51:44 pid=39536 read_message: msg_len=31, reading body
+13:51:44 pid=39536 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:51:44 pid=39536 main: message={'action': 'apply', 'entries': []}
+13:51:44 pid=39536 apply_entries: start, entries=[]
+13:51:44 pid=39536 apply_entries: opening hosts file for read
+13:51:44 pid=39536 apply_entries: read 1368 chars
+13:51:44 pid=39536 apply_entries: computed updated content, creating temp file
+13:51:53 pid=60252 main: process started
+13:51:53 pid=60252 read_message: start, waiting for 4-byte length prefix
+13:51:53 pid=60252 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+13:51:53 pid=60252 read_message: msg_len=81, reading body
+13:51:53 pid=60252 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+13:51:53 pid=60252 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+13:51:53 pid=60252 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+13:51:53 pid=60252 apply_entries: opening hosts file for read
+13:51:53 pid=60252 apply_entries: read 1368 chars
+13:51:53 pid=60252 apply_entries: computed updated content, creating temp file
+13:52:53 pid=52684 main: process started
+13:52:53 pid=52684 read_message: start, waiting for 4-byte length prefix
+13:52:53 pid=52684 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:52:53 pid=52684 read_message: msg_len=31, reading body
+13:52:53 pid=52684 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:52:53 pid=52684 main: message={'action': 'apply', 'entries': []}
+13:52:53 pid=52684 apply_entries: start, entries=[]
+13:52:53 pid=52684 apply_entries: opening hosts file for read
+13:52:53 pid=52684 apply_entries: read 1368 chars
+13:52:53 pid=52684 apply_entries: computed updated content, creating temp file
+13:54:23 pid=60792 main: process started
+13:54:23 pid=60792 read_message: start, waiting for 4-byte length prefix
+13:54:23 pid=60792 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+13:54:23 pid=60792 read_message: msg_len=81, reading body
+13:54:23 pid=60792 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+13:54:23 pid=60792 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+13:54:23 pid=60792 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+13:54:23 pid=60792 apply_entries: opening hosts file for read
+13:54:23 pid=60792 apply_entries: read 1368 chars
+13:54:23 pid=60792 apply_entries: computed updated content, creating temp file
+13:54:23 pid=60792 apply_entries: temp file created at C:\Users\newbie79\AppData\Local\Temp\hosts_9i8j8o90
+13:54:23 pid=60792 apply_entries: temp file written, calling os.replace
+13:54:23 pid=60792 apply_entries: write/replace failed: [WinError 5] 액세스가 거부되었습니다: 'C:\\Users\\newbie79\\AppData\\Local\\Temp\\hosts_9i8j8o90' -> 'C:\\Windows\\System32\\drivers\\etc\\hosts'
+13:54:23 pid=60792 main: apply response sent: {'ok': False, 'error': "hosts 파일에 쓸 권한이 없습니다. install.ps1로 권한을 부여했는지 확인하세요: [WinError 5] 액세스가 거부되었습니다: 'C:\\\\Users\\\\newbie79\\\\AppData\\\\Local\\\\Temp\\\\hosts_9i8j8o90' -> 'C:\\\\Windows\\\\System32\\\\drivers\\\\etc\\\\hosts'"}
+13:54:23 pid=60792 main: about to return from main()
+13:54:23 pid=60792 script: main() returned, process should exit now
+13:54:52 pid=6256 main: process started
+13:54:52 pid=6256 read_message: start, waiting for 4-byte length prefix
+13:54:52 pid=6256 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:54:52 pid=6256 read_message: msg_len=31, reading body
+13:54:52 pid=6256 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:54:52 pid=6256 main: message={'action': 'apply', 'entries': []}
+13:54:52 pid=6256 apply_entries: start, entries=[]
+13:54:52 pid=6256 apply_entries: opening hosts file for read
+13:54:52 pid=6256 apply_entries: read 1368 chars
+13:54:53 pid=6256 apply_entries: computed updated content, creating temp file
+13:54:53 pid=6256 apply_entries: temp file created at C:\Users\newbie79\AppData\Local\Temp\hosts_uuy25v44
+13:54:53 pid=6256 apply_entries: temp file written, calling os.replace
+13:54:53 pid=6256 apply_entries: write/replace failed: [WinError 5] 액세스가 거부되었습니다: 'C:\\Users\\newbie79\\AppData\\Local\\Temp\\hosts_uuy25v44' -> 'C:\\Windows\\System32\\drivers\\etc\\hosts'
+13:54:53 pid=6256 main: apply response sent: {'ok': False, 'error': "hosts 파일에 쓸 권한이 없습니다. install.ps1로 권한을 부여했는지 확인하세요: [WinError 5] 액세스가 거부되었습니다: 'C:\\\\Users\\\\newbie79\\\\AppData\\\\Local\\\\Temp\\\\hosts_uuy25v44' -> 'C:\\\\Windows\\\\System32\\\\drivers\\\\etc\\\\hosts'"}
+13:54:53 pid=6256 main: about to return from main()
+13:54:53 pid=6256 script: main() returned, process should exit now
+13:54:54 pid=6520 main: process started
+13:54:54 pid=6520 read_message: start, waiting for 4-byte length prefix
+13:54:54 pid=6520 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+13:54:54 pid=6520 read_message: msg_len=81, reading body
+13:54:54 pid=6520 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+13:54:54 pid=6520 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+13:54:54 pid=6520 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+13:54:54 pid=6520 apply_entries: opening hosts file for read
+13:54:54 pid=6520 apply_entries: read 1368 chars
+13:54:54 pid=6520 apply_entries: computed updated content, creating temp file
+13:54:54 pid=6520 apply_entries: temp file created at C:\Users\newbie79\AppData\Local\Temp\hosts_frrzwv0z
+13:54:54 pid=6520 apply_entries: temp file written, calling os.replace
+13:54:54 pid=6520 apply_entries: write/replace failed: [WinError 5] 액세스가 거부되었습니다: 'C:\\Users\\newbie79\\AppData\\Local\\Temp\\hosts_frrzwv0z' -> 'C:\\Windows\\System32\\drivers\\etc\\hosts'
+13:54:54 pid=6520 main: apply response sent: {'ok': False, 'error': "hosts 파일에 쓸 권한이 없습니다. install.ps1로 권한을 부여했는지 확인하세요: [WinError 5] 액세스가 거부되었습니다: 'C:\\\\Users\\\\newbie79\\\\AppData\\\\Local\\\\Temp\\\\hosts_frrzwv0z' -> 'C:\\\\Windows\\\\System32\\\\drivers\\\\etc\\\\hosts'"}
+13:54:54 pid=6520 main: about to return from main()
+13:54:54 pid=6520 script: main() returned, process should exit now
+13:55:01 pid=60056 main: process started
+13:55:01 pid=60056 read_message: start, waiting for 4-byte length prefix
+13:55:01 pid=60056 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:55:01 pid=60056 read_message: msg_len=31, reading body
+13:55:01 pid=60056 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:55:01 pid=60056 main: message={'action': 'apply', 'entries': []}
+13:55:01 pid=60056 apply_entries: start, entries=[]
+13:55:01 pid=60056 apply_entries: opening hosts file for read
+13:55:01 pid=60056 apply_entries: read 1368 chars
+13:55:01 pid=60056 apply_entries: computed updated content, creating temp file
+13:55:01 pid=60056 apply_entries: temp file created at C:\Users\newbie79\AppData\Local\Temp\hosts_bxux7n7r
+13:55:01 pid=60056 apply_entries: temp file written, calling os.replace
+13:55:01 pid=60056 apply_entries: write/replace failed: [WinError 5] 액세스가 거부되었습니다: 'C:\\Users\\newbie79\\AppData\\Local\\Temp\\hosts_bxux7n7r' -> 'C:\\Windows\\System32\\drivers\\etc\\hosts'
+13:55:01 pid=60056 main: apply response sent: {'ok': False, 'error': "hosts 파일에 쓸 권한이 없습니다. install.ps1로 권한을 부여했는지 확인하세요: [WinError 5] 액세스가 거부되었습니다: 'C:\\\\Users\\\\newbie79\\\\AppData\\\\Local\\\\Temp\\\\hosts_bxux7n7r' -> 'C:\\\\Windows\\\\System32\\\\drivers\\\\etc\\\\hosts'"}
+13:55:01 pid=60056 main: about to return from main()
+13:55:01 pid=60056 script: main() returned, process should exit now
+13:56:00 pid=31912 main: process started
+13:56:00 pid=31912 read_message: start, waiting for 4-byte length prefix
+13:56:00 pid=31912 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+13:56:00 pid=31912 read_message: msg_len=81, reading body
+13:56:00 pid=31912 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+13:56:00 pid=31912 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+13:56:00 pid=31912 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+13:56:00 pid=31912 apply_entries: opening hosts file for read
+13:56:00 pid=31912 apply_entries: read 1368 chars
+13:56:00 pid=31912 apply_entries: computed updated content, writing hosts file
+13:56:00 pid=31912 apply_entries: wrote hosts file in place
+13:56:00 pid=31912 apply_entries: success
+13:56:00 pid=31912 main: apply response sent: {'ok': True}
+13:56:00 pid=31912 main: about to return from main()
+13:56:00 pid=31912 script: main() returned, process should exit now
+13:56:17 pid=51240 main: process started
+13:56:17 pid=51240 read_message: start, waiting for 4-byte length prefix
+13:56:17 pid=51240 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:56:17 pid=51240 read_message: msg_len=31, reading body
+13:56:17 pid=51240 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:56:17 pid=51240 main: message={'action': 'apply', 'entries': []}
+13:56:17 pid=51240 apply_entries: start, entries=[]
+13:56:17 pid=51240 apply_entries: opening hosts file for read
+13:56:17 pid=51240 apply_entries: read 1477 chars
+13:56:17 pid=51240 apply_entries: computed updated content, writing hosts file
+13:56:17 pid=51240 apply_entries: wrote hosts file in place
+13:56:17 pid=51240 apply_entries: success
+13:56:17 pid=51240 main: apply response sent: {'ok': True}
+13:56:17 pid=51240 main: about to return from main()
+13:56:17 pid=51240 script: main() returned, process should exit now
+13:56:25 pid=53396 main: process started
+13:56:25 pid=53396 read_message: start, waiting for 4-byte length prefix
+13:56:25 pid=53396 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+13:56:25 pid=53396 read_message: msg_len=81, reading body
+13:56:25 pid=53396 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+13:56:25 pid=53396 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+13:56:25 pid=53396 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+13:56:25 pid=53396 apply_entries: opening hosts file for read
+13:56:25 pid=53396 apply_entries: read 1446 chars
+13:56:25 pid=53396 apply_entries: computed updated content, writing hosts file
+13:56:25 pid=53396 apply_entries: wrote hosts file in place
+13:56:25 pid=53396 apply_entries: success
+13:56:25 pid=53396 main: apply response sent: {'ok': True}
+13:56:25 pid=53396 main: about to return from main()
+13:56:25 pid=53396 script: main() returned, process should exit now
+13:56:34 pid=47428 main: process started
+13:56:34 pid=47428 read_message: start, waiting for 4-byte length prefix
+13:56:34 pid=47428 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+13:56:34 pid=47428 read_message: msg_len=31, reading body
+13:56:34 pid=47428 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+13:56:34 pid=47428 main: message={'action': 'apply', 'entries': []}
+13:56:34 pid=47428 apply_entries: start, entries=[]
+13:56:34 pid=47428 apply_entries: opening hosts file for read
+13:56:34 pid=47428 apply_entries: read 1477 chars
+13:56:34 pid=47428 apply_entries: computed updated content, writing hosts file
+13:56:34 pid=47428 apply_entries: wrote hosts file in place
+13:56:34 pid=47428 apply_entries: success
+13:56:34 pid=47428 main: apply response sent: {'ok': True}
+13:56:34 pid=47428 main: about to return from main()
+13:56:34 pid=47428 script: main() returned, process should exit now
+14:04:48 pid=29272 main: process started
+14:04:48 pid=29272 read_message: start, waiting for 4-byte length prefix
+14:04:48 pid=29272 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+14:04:48 pid=29272 read_message: msg_len=81, reading body
+14:04:48 pid=29272 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.133"}]}'
+14:04:48 pid=29272 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]}
+14:04:48 pid=29272 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.133'}]
+14:04:48 pid=29272 apply_entries: opening hosts file for read
+14:04:48 pid=29272 apply_entries: read 1446 chars
+14:04:48 pid=29272 apply_entries: computed updated content, writing hosts file
+14:04:48 pid=29272 apply_entries: wrote hosts file in place
+14:04:48 pid=29272 apply_entries: success
+14:04:48 pid=29272 main: apply response sent: {'ok': True}
+14:04:48 pid=29272 main: about to return from main()
+14:04:48 pid=29272 script: main() returned, process should exit now
+14:04:59 pid=45968 main: process started
+14:04:59 pid=45968 read_message: start, waiting for 4-byte length prefix
+14:04:59 pid=45968 read_message: got length prefix bytes=b'Q\x00\x00\x00'
+14:04:59 pid=45968 read_message: msg_len=81, reading body
+14:04:59 pid=45968 read_message: got body len=81 raw=b'{"action":"apply","entries":[{"domain":"sugang.ncuc.or.kr","ip":"14.53.46.134"}]}'
+14:04:59 pid=45968 main: message={'action': 'apply', 'entries': [{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.134'}]}
+14:04:59 pid=45968 apply_entries: start, entries=[{'domain': 'sugang.ncuc.or.kr', 'ip': '14.53.46.134'}]
+14:04:59 pid=45968 apply_entries: opening hosts file for read
+14:04:59 pid=45968 apply_entries: read 1477 chars
+14:04:59 pid=45968 apply_entries: computed updated content, writing hosts file
+14:04:59 pid=45968 apply_entries: wrote hosts file in place
+14:04:59 pid=45968 apply_entries: success
+14:04:59 pid=45968 main: apply response sent: {'ok': True}
+14:04:59 pid=45968 main: about to return from main()
+14:04:59 pid=45968 script: main() returned, process should exit now
+14:05:14 pid=38824 main: process started
+14:05:14 pid=38824 read_message: start, waiting for 4-byte length prefix
+14:05:14 pid=38824 read_message: got length prefix bytes=b'\x1f\x00\x00\x00'
+14:05:14 pid=38824 read_message: msg_len=31, reading body
+14:05:14 pid=38824 read_message: got body len=31 raw=b'{"action":"apply","entries":[]}'
+14:05:14 pid=38824 main: message={'action': 'apply', 'entries': []}
+14:05:14 pid=38824 apply_entries: start, entries=[]
+14:05:14 pid=38824 apply_entries: opening hosts file for read
+14:05:14 pid=38824 apply_entries: read 1477 chars
+14:05:14 pid=38824 apply_entries: computed updated content, writing hosts file
+14:05:14 pid=38824 apply_entries: wrote hosts file in place
+14:05:14 pid=38824 apply_entries: success
+14:05:14 pid=38824 main: apply response sent: {'ok': True}
+14:05:14 pid=38824 main: about to return from main()
+14:05:14 pid=38824 script: main() returned, process should exit now
