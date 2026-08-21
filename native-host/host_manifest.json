@@ -1,7 +1,7 @@
 {
   "name": "com.newbie79.host_switcher",
   "description": "Host Switcher native helper for hosts file editing",
-  "path": "D:\\projects_newbie79\\host_switcher\\native-host\\run_host.bat",
+  "path": "D:\\projects_newbie79\\host_switcher\\native-host\\host_native.exe",
   "type": "stdio",
   "allowed_origins": [
     "chrome-extension://fdefgbljfclamkkfagifpejcfahndjdn/"

@@ -31,18 +31,20 @@ hosts 파일을 매번 수동으로 열어 편집하지 않고, 팝업 클릭 �
 ### 2단계. hosts 파일 방식용 네이티브 헬퍼 설치 (선택)
 
 HTTPS 도메인에서 이미지/CSS/JS까지 깨지지 않게 하려면(hosts 파일 방식), 로컬에 작은 헬퍼
-프로그램을 한 번 더 설치해야 합니다. 리다이렉트 방식만 쓸 거라면 건너뛰어도 됩니다.
+프로그램(`native-host/host_native.exe`, 이미 빌드되어 포함되어 있어 **Python 설치 불필요**)을
+한 번 더 설치해야 합니다. 리다이렉트 방식만 쓸 거라면 건너뛰어도 됩니다.
 
-1. PC에 [Python](https://www.python.org/)이 설치되어 있어야 합니다(`python --version`으로 확인).
-2. **관리자 권한으로 PowerShell**을 열고, 압축을 푼 폴더 안의 `native-host` 폴더로 이동해
+1. **관리자 권한으로 PowerShell**을 열고, 압축을 푼 폴더 안의 `native-host` 폴더로 이동해
    아래처럼 실행합니다 (`ExtensionId`는 1단계 6번에서 메모한 확장 ID).
    ```powershell
    .\install.ps1 -ExtensionId "복사한_확장_ID"
    ```
    이 스크립트는 (1) hosts 파일에 현재 계정의 쓰기 권한을 부여하고(최초 1회만 관리자 권한 필요),
    (2) native messaging host를 레지스트리에 등록합니다.
-3. 옵션 페이지(팝업 → "도메인 / 서버 관리")에서 도메인의 방식을 **"hosts 파일"**로 선택하면
-   옆에 "네이티브 헬퍼 연결됨" 배지가 뜹니다. 안 뜨면 2번을 다시 확인하세요.
+2. 옵션 페이지(팝업 → "도메인 / 서버 관리")에서 도메인의 방식을 **"hosts 파일"**로 선택하면
+   옆에 "네이티브 헬퍼 연결됨" 배지가 뜹니다. 안 뜨면 1번을 다시 확인하세요.
+
+> `host_native.py`를 직접 수정한 경우에만 재빌드가 필요합니다 — "native-host 재빌드하기" 절 참고.
 
 설치를 되돌리려면 같은 폴더의 `uninstall.ps1`을 실행하세요(레지스트리 항목만 제거하며,
 hosts 파일 쓰기 권한과 hosts 파일에 남은 항목은 스크립트 안내에 따라 직접 정리해야 합니다).
@@ -76,8 +78,9 @@ hosts 파일 쓰기 권한과 hosts 파일에 남은 항목은 스크립트 안�
   충돌하지 않습니다. 이 ID는 도메인을 삭제해도 재사용되지 않습니다(계속 증가).
 
 ### hosts 파일 방식
-- 확장이 로컬에 설치된 네이티브 헬퍼 프로그램에 메시지를 보내, 실제
-  `C:\Windows\System32\drivers\etc\hosts` 파일에 `IP 도메인` 항목을 씁니다.
+- 확장이 로컬에 설치된 네이티브 헬퍼 프로그램(`native-host/host_native.exe`, PyInstaller로
+  빌드된 단일 실행 파일)에 메시지를 보내, 실제 `C:\Windows\System32\drivers\etc\hosts` 파일에
+  `IP 도메인` 항목을 씁니다.
 - URL 자체는 바뀌지 않고 DNS 해석만 바뀌는 것이므로, HTTPS여도 인증서 경고 없이
   이미지/CSS/JS까지 정상적으로 로드됩니다.
 - **Chrome 자체 DNS 캐시 주의**: hosts 파일이 바뀌어도 Chrome이 최근에 조회한 도메인은
@@ -105,3 +108,19 @@ hosts 파일 쓰기 권한과 hosts 파일에 남은 항목은 스크립트 안�
   로그인한 다른 PC의 Chrome과도 동기화됩니다.
 - 현재 선택 상태(어떤 도메인이 어떤 서버로 라우팅 중인지)는 `chrome.storage.local`에
   저장되어 PC(프로필)별로 독립적으로 유지됩니다.
+
+## native-host 재빌드하기 (유지보수용)
+
+`native-host/host_native.py`를 직접 수정했을 때만 필요합니다. 평소 사용자는 이 절을
+몰라도 됩니다(이미 빌드된 `host_native.exe`가 리포에 포함되어 있음).
+
+1. PC에 Python과 PyInstaller가 필요합니다: `pip install pyinstaller`
+2. `native-host` 폴더에서 아래 명령 실행:
+   ```powershell
+   pyinstaller --onefile --noconsole --name host_native --distpath . --workpath build --specpath build host_native.py
+   ```
+3. `native-host/host_native.exe`가 새로 생성됩니다. `build/` 폴더는 중간 산출물이라
+   지워도 됩니다.
+4. 이미 `install.ps1`을 실행해 등록해둔 상태라면 재설치는 필요 없습니다 — 레지스트리는
+   `host_manifest.json` 파일 경로만 가리키고, 그 파일의 `path`는 이미 `host_native.exe`를
+   가리키고 있어서 새로 빌드된 exe가 바로 다음 호출부터 사용됩니다.

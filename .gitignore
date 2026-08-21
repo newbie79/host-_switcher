@@ -1,0 +1,7 @@
+# PyInstaller 빌드 중간 산출물 (host_native.exe만 결과물로 커밋)
+native-host/build/
+native-host/*.spec
+native-host/__pycache__/
+
+# install.ps1이 로컬 경로/확장 ID로 생성하는 머신별 파일 (템플릿만 커밋)
+native-host/host_manifest.json

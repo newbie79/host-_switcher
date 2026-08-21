@@ -44,7 +44,11 @@ icacls $hostsPath /grant "${currentUser}:(M)" | Out-Null
 Write-Host "   완료. 이후로는 관리자 권한 없이 hosts 파일을 수정할 수 있습니다."
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$runHostBat = Join-Path $scriptDir "run_host.bat"
+$hostExePath = Join-Path $scriptDir "host_native.exe"
+if (-not (Test-Path $hostExePath)) {
+    Write-Error "host_native.exe가 없습니다: $hostExePath (README의 빌드 방법 참고)"
+    exit 1
+}
 $manifestTemplatePath = Join-Path $scriptDir "host_manifest.template.json"
 $manifestOutPath = Join-Path $scriptDir "host_manifest.json"
 
@@ -53,9 +57,9 @@ $template = Get-Content $manifestTemplatePath -Raw
 # JSON 문자열 안에 넣을 경로이므로 백슬래시 1개를 JSON 이스케이프(백슬래시 2개)로 바꾼다.
 # -replace의 패턴 '\\'는 정규식이라 백슬래시 1개를 매치하지만, 치환 문자열 '\\'는 리터럴이라
 # 그대로 백슬래시 2개가 출력된다(치환 문자열에는 백슬래시 이스케이프 규칙이 없음, $만 특수).
-$escapedBatPath = $runHostBat -replace '\\', '\\'
+$escapedExePath = $hostExePath -replace '\\', '\\'
 $manifestContent = $template `
-    -replace '__RUN_HOST_BAT_PATH__', $escapedBatPath `
+    -replace '__HOST_EXE_PATH__', $escapedExePath `
     -replace '__EXTENSION_ID__', $ExtensionId
 # Windows PowerShell 5.1에는 -Encoding utf8NoBOM이 없어서(7+ 전용) .NET API로 BOM 없이 직접 쓴다.
 # (BOM이 붙으면 Chrome이 이 JSON manifest를 못 읽을 수 있다.)
